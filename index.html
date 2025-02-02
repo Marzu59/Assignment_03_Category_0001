@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -23,6 +25,10 @@
               colors: {
                 clifford: '#da373d',
                 'bike-bg':'rgba(231, 111, 81, 0.1)',
+                'er': 'rgba(255, 220, 38, 1)',
+                'kr': 'rgba(255, 220, 38, 1)',
+                'bg': 'rgba(255, 249, 244, 1)',
+
               }
             }
           }
@@ -31,17 +37,17 @@
 
 </head>
 <body class="sora">
-    <header>
-      <nav class="bg-[#FFF9F4]"> 
+   
+      <nav class="bg-[#FFF9F4] sticky top-0 z-50 py-4 border-[1px] border-b-black sm:border-none "> 
         <!-- parent -->
-         <div class="mx-[140px]">
+         <div class="md:mx-[100px] md:flex items-center md:justify-between flex justify-between px-3 ">
         <!-- logo -->
       <div class="flex items-center space-x-2">
         <img src="./c1-assets/logo-header.png" alt="">
-        <h3 class="font-bold">Browse<span class="text-[#FFDC26]">4</span>Pets</h3>
+        <h3 class="font-bold hidden sm:block">Browse<span class="text-[#FFDC26]">4</span>Pets</h3>
   </div>
-         <div>
-          <ul class="">
+         <div class="hidden sm:block">
+          <ul class="flex  gap-5 ">
             <li>Find a Cat</li>
             <li> Breeds</li>
             <li>Contact us</li>
@@ -50,19 +56,167 @@
          </div>
 
          <!-- button  -->
-          <div>
-            <button class="btn btn-warning">Warning</button>
+          <div class=" flex items-center gap-3  hidden sm:block">
+           <i class="fa-solid fa-magnifying-glass"></i> 
+            <i class="fa-regular fa-bell"></i> 
+            <a role="button" class="btn border-3 border-kr">Login</a>
+            <button class="btn btn-warning bg-er">Register</button>
           </div>
-      
+   
+          <!-- visible only mobile -->
+           <div class="block sm:hidden">
+            <i class="fa-solid fa-bars"></i>
+           </div>
+           <!--  -->
 
 </div>
       </nav>
+<!-- banner  -->
+<div class="mt-16 lg:relative md:mx-[100px]    mx-5 flex flex-col-reverse gap-2 ">
+
+<!-- img -->
+
+<div class="    "> 
+
+  <img class="lg:w-[1320px] w-[370px] " src="./c1-assets/cat-big.png" alt="">
 
 
+</div>
 
-    </header>
+
+ <!-- text  -->
+ <div class="space-y-6  lg:absolute top-0">
+  <h1 class="font-bold text-5xl">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
   
+  <p>Discover a world of treats, toys, and essentials handpicked for <br>your furry friends. Shop now and make tails wag with joy!</p> 
+  <button class="btn btn-warning bg-er w-[159px] h-[45px]">find a pet</button>
+    </div>
 
+   
+
+</div>
+   
+  
+<main class="md:mx-[100px]  mx-6 ">
+
+<h3 class="font-bold mt-[140px] mb-12">Browse By Categories</h3>
+
+<!-- cetagories section -->
+<section class="grid grid-cols-2 gap-1 lg:gap-6 gap lg:flex">
+
+<div class="bg-[#F9DF8A] w-40 lg:w-[200px] h-[250px] space-y-4 justify-items-center content-center rounded-lg">
+  <div class="bg-white w-24 h-24 content-center justify-items-center rounded-full " >
+    <img src="./c1-assets/dog-cartoon.png" alt="">
+  </div>
+<div class="text-center">
+  <h4>  Dog </h4>
+  <br>
+  <p>3 items</p>
+</div>
+</div>
+<!-- box2 -->
+<div class="bg-[#F9DF8A] w-40 lg:w-[200px] h-[250px] space-y-4 justify-items-center content-center rounded-lg">
+  <div class="bg-white w-24 h-24 content-center justify-items-center rounded-full " >
+    <img src="./c1-assets/fish-cartoon.png" alt="">
+  </div>
+<div class="text-center">
+  <h4> Fish </h4>
+  <br>
+  <p>3 items</p>
+</div>
+</div>
+<!-- box3 -->
+<div class="bg-[#F9DF8A] w-40 lg:w-[200px] h-[250px] space-y-4 justify-items-center content-center rounded-lg">
+  <div class="bg-white w-24 h-24 content-center justify-items-center rounded-full " >
+    <img src="./c1-assets/cat-cartoon.png" alt="">
+  </div>
+<div class="text-center">
+  <h4>  Cat </h4>
+  <br>
+  <p>3 items</p>
+</div>
+</div>
+<!-- box4 -->
+<div class="bg-[#F9DF8A] w-40 lg:w-[200px] h-[250px] space-y-4 justify-items-center content-center rounded-lg">
+  <div class="bg-white w-24 h-24 content-center justify-items-center rounded-full " >
+    <img src="./c1-assets/bird-cartoon.png" alt="">
+  </div>
+<div class="text-center">
+  <h4>  Bird </h4>
+  <br>
+  <p>3 items</p>
+</div>
+</div>
+<!-- box5 -->
+<div class="bg-[#F9DF8A] w-40 lg:w-[200px] h-[250px] space-y-4 justify-items-center content-center rounded-lg">
+  <div class="bg-white w-24 h-24 content-center justify-items-center rounded-full " >
+    <img src="./c1-assets/cute-dog-mid.png alt="">
+  </div>
+<div class="text-center">
+  <h4>  Small pets (img not found) </h4>
+  <br>
+  <p>3 items</p>
+</div>
+</div>
+<!-- box6 -->
+<div class="bg-[#F9DF8A] w-40 lg:w-[200px] h-[250px] space-y-4 justify-items-center content-center rounded-lg">
+  <div class="bg-white w-24 h-24 content-center justify-items-center rounded-full " >
+    <img src="./c1-assets/rabbit-cartoon.png" alt="">
+  </div>
+<div class="text-center">
+  <h4>  Rabbit </h4>
+  <br>
+  <p>3 items</p>
+</div>
+</div>
+
+</section>
+
+<!-- trending pet prodcts -->
+ <section class="bg-bg mt-16">
+
+<div>
+  <h1 class="font-bold text-2xl ">Trending Pet Products</h1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
 
 
 
