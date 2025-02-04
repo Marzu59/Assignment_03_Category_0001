@@ -29,6 +29,7 @@
                 'kr': 'rgba(255, 220, 38, 1)',
                 'bg': 'rgba(255, 249, 244, 1)',
                 '9box': 'rgba(255, 249, 244, 1)',
+                'over-box': 'rgba(255, 249, 244, 1)',
 
               }
             }
@@ -87,10 +88,10 @@
 
  <!-- text  -->
  <div class="space-y-6  lg:absolute top-0">
-  <h1 class="font-bold text-5xl">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
+  <h1 class="font-bold text-5xl  ">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
   
   <p>Discover a world of treats, toys, and essentials handpicked for <br>your furry friends. Shop now and make tails wag with joy!</p> 
-  <button class="btn btn-warning bg-er w-[159px] h-[45px]">find a pet</button>
+  <button class="btn btn-warning bg-er w-[159px] h-[45px] animate-bounce">find a pet</button>
     </div>
 
    
@@ -98,12 +99,12 @@
 </div>
    
   
-<main class="md:mx-[100px]  mx-6 ">
-<div>
-<h3 class="font-bold mt-[140px] mb-12">Browse By Categories</h3>
+<main class=" ">
+<div class="md:mx-[100px]  mx-6">
+<h3 class="font-bold mt-[140px] mb-12 ">Browse By Categories</h3>
 </div>
 <!-- cetagories section -->
-<section class="grid grid-cols-2 gap-3  lg:gap-6 gap lg:flex">
+<section class="grid grid-cols-2 gap-3  lg:gap-6 gap lg:flex md:mx-[100px]  mx-6">
 
 <div class="bg-[#F9DF8A] w-40 lg:w-[200px] h-[250px] space-y-4 justify-items-center content-center rounded-lg">
   <div class="bg-white w-24 h-24 content-center justify-items-center rounded-full " >
@@ -174,7 +175,7 @@
 </section>
 
 <!-- trending pet prodcts -->
- <section class="bg-bg mt-16 ">
+ <section class="bg-bg mt-16 pb-16">
 
 <div class="pt-14">
   <h1 class="font-bold text-2xl ">Trending Pet Products</h1>
@@ -326,14 +327,46 @@
 
 
 
-
-
-
-
-
-
  </section>
 
+<!-- price section -->
+<section class="pt-16 border-white md:mx-[100px] mb-[360px]   mx-6">
+
+<h3 class="font-bold pb-4">Everyday low Price</h3>
+
+<!-- dogs-tshirts perent div  -->
+<div class="md:flex grid grid-cols-1 gap-7 ">
+ <!-- large dog    md:max-h-full md:max-w-full max-w-[356px] h-[335px]       -->
+  
+<div class="md:justify-between relative md:static   w-full h-[335px] md:w-[730px] md:h-[420px] pt-3 pl-10 md:pl-24  md:items-center bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-lg flex">
+  <div class="space-y-1">
+    <p class="md:block hidden">Under Price</p>
+    <h3 class="font-bold md:text-3xl   whitespace-nowrap">Pet Grooming Mitt</h3>
+    <p class="font-bold text-white text-sm md:block hidden">(Easy Hair Removal)</p>
+    <h1 class="font-bold text-xl  md:text-black text-white ">$7.99</h1>
+  </div>
+<div class="absolute top-8   left-20 md:static ">
+  <img class=" " src="./c1-assets/cute-dog-mid.png" alt="">
+</div>
+
+</div>
+
+<!-- small dog  -->
+<div class="relative bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A]  rounded-lg md:flex-1 pt-10 pl-12 md:h-[420px]">
+<div class="absolute top-20">
+  <h3 class="font-bold text-xl md:text-3xl">T-Shirt for Dogs</h3>
+<h1 class="text-yellow-500 text-xl font-bold">799$</h1>
+</div>
+
+  <div class=" justify-items-end">
+    <img class="md:w-[290px] md:h-[360px]" src="./c1-assets/cute-pet-small.png" alt="">
+  </div>
+
+
+
+</div>
+
+</div>
 
 
 
@@ -341,6 +374,43 @@
 
 
 
+
+
+
+</section>
+
+
+<!-- box-over-the-main-section-&-footer -->
+
+<div class="bg-over-box md:mx-[100px] mx-6 rounded-md rounded-lg py-8 ">
+
+  <!-- content  -->
+   <div class="md:flex md:items-center">
+
+<!-- img  -->
+<div>
+<img class="w-[190px] h-[238px] md:w-[330px] md:h-[415px]" src="./c1-assets/cute-pet-small.png" alt="">
+
+</div>
+
+<!-- text  -->
+<div>
+
+  <div class="space-y-3">
+<h2 class="font-bold text-2xl">Get Pawsome News!</h2>
+<p>Exclusive training tips, ticks, product deals and more.</p> </div>
+
+<!-- email  -->
+ <div class="space-y-3 pt-3  ">
+<input class="p-2 md:w-[470px] md:h-[67px] border rounded-md " type="email" id="email" name="email" placeholder=" your email" >
+
+</div>
+<br>
+<button class="btn btn-warning  font-normal px-8 bg-er text-xl">Subscribe</button>
+</div>
+
+</div>
+</div>
 
 
 
@@ -362,6 +432,8 @@
 </main>
 
 
+<!-- footer  -->
+<footer class="bg-[#FFDC26]">
 
 
 
@@ -371,54 +443,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</footer>
 
 
 
