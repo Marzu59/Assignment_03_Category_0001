@@ -58,11 +58,15 @@
          </div>
 
          <!-- button  -->
-          <div class=" flex items-center gap-3  hidden sm:block">
+          <div class="    md:block hidden">
+             <div class="flex   gap-4 items-center ">
+
            <i class="fa-solid fa-magnifying-glass"></i> 
             <i class="fa-regular fa-bell"></i> 
             <a role="button" class="btn border-3 border-kr">Login</a>
             <button class="btn btn-warning bg-er">Register</button>
+          </div>
+
           </div>
    
           <!-- visible only mobile -->
@@ -152,10 +156,10 @@
 <!-- box5 -->
 <div class="bg-[#F9DF8A] w-40 lg:w-[200px] h-[250px] space-y-4 justify-items-center content-center rounded-lg">
   <div class="bg-white w-24 h-24 content-center justify-items-center rounded-full " >
-    <img src="./c1-assets/cute-dog-mid.png alt="">
+    <img src="./c1-assets/mouse-cartoon.png" alt="">
   </div>
 <div class="text-center">
-  <h4>  Small pets (img not found) </h4>
+  <h4>  Small pets  </h4>
   <br>
   <p>3 items</p>
 </div>
@@ -174,8 +178,61 @@
 
 </section>
 
+
+<!-- challange part  -->
+<section class="md:mx-[100px]  mx-2 mt-5">
+<h1 class="font-bold text-xl ">Pet food corner</h1>
+
+<!-- parent  -->
+<div class="md:flex gap-7 ">
+
+<!-- dog  -->
+ <div class="bg-green-400 border rounded-lg flex flex-1 p-2   md:p-14">
+  <div class="" >
+<img class="w-[130.77px] rounded-md h-[120px]" src="./c1-assets/dog-food.jpg" alt="">
+<h2 class="font-bold">Dry chicken</h2>
+<h4 class="text-blue-900 font-bold"> $5.99 </h4>
+    <button class="btn">Add Cart <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+    </svg>
+    </button>
+  </div>
+
+  <div class="content-center">
+<img class=" md:w-[330px] md:h-[250px] w-[300px]" src="./c1-assets/dog--tailwind-removebg-preview.png" alt="">
+  </div>
+
+ </div>
+
+<!-- cat  -->
+ <div class="bg-orange-400 rounded-lg flex flex-1 p-2 md:p-14">
+  <div>
+    <img class="w-[130.77px] h-[120px] bg-white rounded-md" src="./c1-assets/cat-food.png" alt="">
+    <h2 class="font-bold">Cat Biscuits</h2>
+
+    <h4 class="text-blue-900 font-bold"> $5.99 </h4>
+    <button class="btn">Add Cart <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+    </svg>
+    </button>
+  </div>
+
+  <div>
+    <img class=" md:w-[330px] h-[220px] w-[300px] md:h-[250px]" src="./c1-assets/cat-2-removebg-preview.png" alt="">
+  </div>
+
+ </div>
+
+
+</div>
+
+</section>
+
+
 <!-- trending pet prodcts -->
- <section class="bg-bg mt-16 pb-16">
+ <section class="bg-bg mt-16 pb-16 ">
+
+  <div class="md:mx-[100px] mx-6">
 
 <div class="pt-14">
   <h1 class="font-bold text-2xl ">Trending Pet Products</h1>
@@ -198,14 +255,15 @@
 </div>
 
 <!-- 9box div  -->
- <div class=" grid md:grid-cols-3 grid-cols-2 gap-1 mt-2 md:gap-6 border border-yellow-500  md:w-[70%] ">
+ <div class=" grid md:grid-cols-3 grid-cols-2 gap-1 mt-2 md:gap-6    md:w-[70%] ">
   
    
 <!-- 1 -->
 <div class=" bg-white rounded-md flex gap-1 md:gap-3 md:p-4 p-2  border  items-center  ">
 
   <div class="bg-9box md:p-3 p-1    ">
-      <img src="./c1-assets/pet-couch.png" alt="">
+    <img class=" md:block hidden " src="./c1-assets/dog-cartoon.png" alt="">
+      <img class="md:hidden" src="./c1-assets/pet-couch.png" alt="">
   </div>
   <div>
  <p><i class="fa-solid fa-star text-yellow-500"></i> 4.5</p>
@@ -218,7 +276,8 @@
 <div class=" bg-white rounded-md flex gap-1 md:gap-3 md:p-4 p-2  border  items-center  ">
 
   <div class="bg-9box md:p-3 p-1    ">
-      <img src="./c1-assets/pet-couch.png" alt="">
+    <img class=" md:block hidden " src="./c1-assets/fish-cartoon.png   " alt="">
+      <img class="md:hidden" src="./c1-assets/pet-couch.png" alt="">
   </div>
   <div>
  <p><i class="fa-solid fa-star text-yellow-500"></i> 4.5</p>
@@ -231,7 +290,8 @@
 <div class=" bg-white rounded-md flex gap-1 md:gap-3 md:p-4 p-2  border  items-center  ">
 
   <div class="bg-9box md:p-3 p-1    ">
-      <img src="./c1-assets/pet-couch.png" alt="">
+    <img class=" md:block hidden " src="./c1-assets/bird-cartoon.png" alt="">
+      <img class="md:hidden" src="./c1-assets/pet-couch.png" alt="">
   </div>
   <div>
  <p><i class="fa-solid fa-star text-yellow-500"></i> 4.5</p>
@@ -244,7 +304,8 @@
 <div class=" bg-white rounded-md flex gap-1 md:gap-3 md:p-4 p-2  border  items-center  ">
 
   <div class="bg-9box md:p-3 p-1    ">
-      <img src="./c1-assets/pet-couch.png" alt="">
+    <img class=" md:block hidden " src="./c1-assets/rabbit-cartoon.png" alt="">
+      <img class="md:hidden" src="./c1-assets/pet-couch.png" alt="">
   </div>
   <div>
  <p><i class="fa-solid fa-star text-yellow-500"></i> 4.5</p>
@@ -257,7 +318,8 @@
 <div class=" bg-white rounded-md flex gap-1 md:gap-3 md:p-4 p-2  border  items-center  ">
 
   <div class="bg-9box md:p-3 p-1    ">
-      <img src="./c1-assets/pet-couch.png" alt="">
+    <img class=" md:block hidden " src="./c1-assets/bird-cartoon.png" alt="">
+      <img class="md:hidden" src="./c1-assets/pet-couch.png" alt="">
   </div>
   <div>
  <p><i class="fa-solid fa-star text-yellow-500"></i> 4.5</p>
@@ -283,7 +345,9 @@
 <div class=" bg-white rounded-md flex gap-1 md:gap-3 md:p-4 p-2  border  items-center  ">
 
   <div class="bg-9box md:p-3 p-1    ">
-      <img src="./c1-assets/pet-couch.png" alt="">
+    <img class=" md:block hidden " src="./c1-assets/fish-cartoon.png" alt="">
+      <img class="md:hidden" src="./c1-assets/pet-couch.png" alt="">
+      
   </div>
   <div>
  <p><i class="fa-solid fa-star text-yellow-500"></i> 4.5</p>
@@ -296,7 +360,7 @@
 <div class=" bg-white rounded-md flex gap-1 md:gap-3 md:p-4 p-2  border  items-center  ">
 
   <div class="bg-9box md:p-3 p-1    ">
-      <img src="./c1-assets/pet-couch.png" alt="">
+    <img src="./c1-assets/pet-couch.png" alt="">
   </div>
   <div>
  <p><i class="fa-solid fa-star text-yellow-500"></i> 4.5</p>
@@ -309,7 +373,8 @@
 <div class=" bg-white rounded-md flex gap-1 md:gap-3 md:p-4 p-2  border  items-center  ">
 
   <div class="bg-9box md:p-3 p-1    ">
-      <img src="./c1-assets/pet-couch.png" alt="">
+    <img class=" md:block hidden " src="/c1-assets/rabbit-cartoon.png" alt="">
+      <img class="md:hidden" src="./c1-assets/pet-couch.png" alt="">
   </div>
   <div>
  <p><i class="fa-solid fa-star text-yellow-500"></i> 4.5</p>
@@ -326,7 +391,7 @@
 </div>
 
 
-
+</div>
  </section>
 
 <!-- price section -->
@@ -399,7 +464,7 @@
 <footer class="bg-[#FFDC26] bg-opacity-50 pt-[350px] pb-[100px]  relative">
 
 <!-- box-over-the-main-section-&-footer -->
-<div class="bg-over-box md:mx-[100px] mx-6 rounded-md rounded-lg py-8  absolute ">
+<div class="bg-over-box md:mx-[100px] mx-6 rounded-md rounded-lg py-8 -top-60  w-max-[355px] md:w-[1205px]  absolute ">
 
   <!-- content  -->
    <div class="md:flex md:items-center md:pl-10 md:gap-14">
